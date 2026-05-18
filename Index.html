@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Tes GAS</h1>
+
+<script>
+fetch("https://script.google.com/macros/s/AKfycbxuoD6Ut3lrDzdI8OqMgmJ-3O8tEfAKDPOz22XB3Ck/dev")
+  .then(res => res.json())
+  .then(data => {
+    document.body.innerHTML += "<pre>"+JSON.stringify(data)+"</pre>";
+  });
+</script>
+
+</body>
+</html>
